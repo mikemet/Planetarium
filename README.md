@@ -1,2 +1,2 @@
 # Planetarium
-Example landing page "Planetarium"
+Example landing page "Planetarium" with Bootstrap 5.
