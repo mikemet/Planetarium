@@ -22,17 +22,18 @@ section {
 
 a {
     text-decoration: none;
+    color          : white;
 }
 
 a:hover {
-    color: deepskyblue;
+    color: rgb(58, 212, 148);
 }
 
 /* ================================  header  ===================================== */
 .header {
     background-image: url(images/bg.jpg);
-    height          : 100vh;
     background-size : cover;
+    height          : 100vh;
 }
 
 .navbar-nav .nav-item .nav-link,
@@ -50,7 +51,17 @@ a:hover {
 }
 
 .navbar-nav .nav-item .nav-link:hover {
-    color: deepskyblue;
+    color: rgb(58, 212, 148);
+}
+
+.navbar-light .navbar-nav .nav-link.active {
+    color: white;
+}
+
+.navbar-nav {
+    font-size     : 0.938em;
+    font-weight   : 600;
+    text-transform: uppercase;
 }
 
 .phone a {
@@ -60,7 +71,7 @@ a:hover {
     font-size     : 1em;
     font-weight   : 600;
     margin-right  : 1rem;
-    padding       : 0 0.8rem 0;
+    padding       : 0.5rem 1rem;
     text-transform: uppercase;
 }
 
@@ -68,6 +79,31 @@ a:hover {
     background-color: rgb(58, 212, 148);
 }
 
-.phone p {
+.phone span {
     font-size: 0.938em;
+}
+
+/* ================================  media  ================================================= */
+@media (max-width: 425px) {
+    .navbar-brand {
+        order: 0;
+    }
+
+    /* .navbar .navbar-brand span {
+        visibility: hidden;
+    } */
+
+    .navbar-toogler {
+        order: 2;
+    }
+
+    .phone {
+        order: 1;
+    }
+}
+
+@media (min-width: 426px) {
+    /* .navbar .navbar-brand span {
+        position: relative;
+    } */
 }
