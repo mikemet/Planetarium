@@ -16,10 +16,6 @@ img {
     height   : auto;
 }
 
-/* section {
-    padding: 50px 0;
-} */
-
 a {
     text-decoration: none;
     color          : white;
@@ -29,30 +25,28 @@ a:hover {
     color: rgb(58, 212, 148);
 }
 
-/* ================================  header  ===================================== */
+/* ================================  header top  ===================================== */
 .header {
     background-image: url(images/bg.jpg);
     background-size : cover;
     height          : 100vh;
 }
 
-.navbar-nav .nav-item .nav-link,
-.navbar .navbar-brand {
-    color: white;
-}
-
-.navbar .navbar-brand:hover {
-    color: white;
-}
-
-.navbar .navbar-brand span {
+.logo a {
     font-size     : 1.125em;
+    font-weight   : 500;
     text-transform: uppercase;
 }
 
-/* .navbar-nav .nav-item .nav-link {
-    flex-wrap: nowrap;
-} */
+.logo a:hover {
+    color: white;
+}
+
+.navbar-nav .nav-item .nav-link {
+    color      : white;
+    font-size  : 0.938em;
+    font-weight: 500;
+}
 
 .navbar-nav .nav-item .nav-link:hover {
     color: rgb(58, 212, 148);
@@ -65,6 +59,7 @@ a:hover {
 .navbar-nav {
     font-size     : 0.938em;
     font-weight   : 600;
+    right         : -1em;
     text-transform: uppercase;
 }
 
@@ -79,8 +74,8 @@ a:hover {
     border        : 2px solid rgb(58, 212, 148);
     border-radius : 3px;
     color         : white;
-    font-size     : 1em;
-    font-weight   : 600;
+    font-size     : 0.938em;
+    font-weight   : 500;
     margin-right  : 1rem;
     padding       : 0.5rem 1rem;
     text-transform: uppercase;
@@ -91,8 +86,9 @@ a:hover {
 }
 
 .phone span {
-    font-size : 0.938em;
-    margin-top: .7rem;
+    font-size  : 1em;
+    font-weight: 700;
+    margin-top : .5rem;
 }
 
 /* ================================  media  ================================================= */
@@ -108,10 +104,6 @@ a:hover {
         order: 0;
     }
 
-    /* .navbar .navbar-brand span {
-        visibility: hidden;
-    } */
-
     .navbar-toogler {
         order: 2;
     }
@@ -121,11 +113,7 @@ a:hover {
     }
 }
 
-@media (min-width: 426px) {
-    /* .navbar .navbar-brand span {
-        position: relative;
-    } */
-}
+@media (min-width: 426px) {}
 
 @media (min-width: 1124px) {
     .navbar-brand span {

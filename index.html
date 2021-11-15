@@ -18,7 +18,56 @@
   <header>
     <div class="container-fluid header pt-3">
       <div class="row">
-        <nav class="navbar navbar-expand-lg navbar-light bg-none d-inline-flex">
+
+        <div class="top d-inline-flex justify-content-around align-items-center">
+
+          <div class="top-item logo order-0 order-md-0">
+            <a href="#">
+              <img src="/images/logo.png" class="me-2" alt="logo">
+              <span class="d-none d-lg-inline">digital planet</span></a>
+          </div>
+
+          <div class="top-item main-menu order-2 order-md-1">
+            <nav class="navbar navbar-expand-lg">
+              <img src="images/burger.png" class="navbar-toggler" data-bs-toggle="collapse" alt="burger"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav pt-2 mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">О Продукте</a>
+                  </li>
+                  <div class="dot d-none d-lg-inline mt-3"></div>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Как работает</a>
+                  </li>
+                  <div class="dot d-none d-lg-inline mt-3"></div>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Технология</a>
+                  </li>
+                  <div class="dot d-none d-lg-inline mt-3"></div>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Вопросы</a>
+                  </li>
+                  <div class="dot d-none d-lg-inline mt-3"></div>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Контакты</a>
+                  </li>
+                </ul>
+              </div>
+            </nav>
+
+          </div>
+
+          <div class="top-item phone d-flex order-1 order-md-2">
+            <a href="#">заказать</a>
+            <span class="d-none d-lg-inline">8 (800) 555 75 35</span>
+          </div>
+
+        </div>
+
+        <!-- <nav class="navbar navbar-expand-lg navbar-light bg-none">
           <div class="container-fluid">
 
             <a class="navbar-brand order-0 order-md-0" href="#">
@@ -28,7 +77,7 @@
             <button class="navbar-toggler order-2 order-md-1" type="button" data-bs-toggle="collapse"
               data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
               aria-label="Toggle navigation" style="border:none;">
-              <!-- <span class="navbar-toggler-icon"></span> -->
+               <span class="navbar-toggler-icon"></span> 
               <span class="" style="border:none;"><img src="images/burger.png" style="border:none;" alt=""></span>
             </button>
 
@@ -62,11 +111,11 @@
             </div>
 
           </div>
-        </nav>
+        </nav> -->
       </div>
 
       <div class="row">
-        <div class="header-content">
+        <div>
           <div class="container">
             <h1>Digital Planet VR</h1>
             <p>Образовательный виртуальный планетарий в Новороссийске.</p>
@@ -78,10 +127,19 @@
       </div>
 
       <footer>
-        <div class="container">
-          <i class="fab fa-facebook-f mr-2"></i>
-          <i class="fab fa-vk"></i>
-          <span>СКРОЛЛ ВНИЗ</span>
+        <div class="row">
+          <div class="footer">
+            <div class="container d-flex">
+              <div class="socials col-6">
+                <i class="fab fa-facebook-f mr-2"></i>
+                <i class="fab fa-vk"></i>
+              </div>
+              <div class="scroll-down col-6">
+                <span>СКРОЛЛ ВНИЗ</span><br>
+                <img src="images/scroll_down.png" alt="">
+              </div>
+            </div>
+          </div>
         </div>
       </footer>
     </div>
