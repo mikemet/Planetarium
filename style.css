@@ -36,23 +36,9 @@ a:hover {
     height          : 100vh;
 }
 
-.navbar-nav .nav-item .nav-link,
-.navbar .navbar-brand {
+.navbar-nav .nav-item .nav-link {
     color: white;
 }
-
-.navbar .navbar-brand:hover {
-    color: white;
-}
-
-.navbar .navbar-brand span {
-    font-size     : 1.125em;
-    text-transform: uppercase;
-}
-
-/* .navbar-nav .nav-item .nav-link {
-    flex-wrap: nowrap;
-} */
 
 .navbar-nav .nav-item .nav-link:hover {
     color: rgb(58, 212, 148);
