@@ -3,6 +3,12 @@ html {
     font-size: 16px;
 }
 
+/* =======================================  root  ======================================== */
+:root {
+    --lightgreen-color: rgb(58, 212, 148);
+    --lightgray-color : rgb(211, 206, 206);
+}
+
 body {
     font-family: 'Ubuntu', sans-serif;
     font-size  : 16px;
@@ -22,7 +28,15 @@ a {
 }
 
 a:hover {
-    color: rgb(58, 212, 148);
+    color: var(--lightgreen-color);
+}
+
+/* ================================  header and top  ===================================== */
+.header {
+    background-image: url(images/bg.jpg);
+    background-size : cover;
+    height          : 100vh;
+    position        : relative;
 }
 
 .kid-img {
@@ -31,12 +45,10 @@ a:hover {
     right   : 0;
 }
 
-/* ================================  header top  ===================================== */
-.header {
-    background-image: url(images/bg.jpg);
-    background-size : cover;
-    height          : 100vh;
-    position        : relative;
+.top {
+    display        : flex;
+    justify-content: space-around;
+    align-items    : center;
 }
 
 .logo a {
@@ -113,18 +125,50 @@ a:hover {
 
 /* ================================  header-content  ======================================== */
 .header-content {
-    padding-top: 5em;
+    padding-left   : 10em;
+    padding-top    : 8%;
+    /* height      : 80vh; */
 }
 
 .header-content h1 {
-    font-size  : max(0.4vw, 45%, 3.5em);
+    font-size  : max(1.4vw, 70%, 6.4em);
     font-weight: 300;
     width      : clamp(45ch, 50%, 75ch);
 }
 
 .header-content p {
-    width: clamp(45ch, 75%, 75ch);
+    color         : var(--lightgray-color);
+    font-size     : 1.1em;
+    width         : clamp(45ch, 50%, 75ch);
+    padding-bottom: 3.5em;
 }
+
+#order,
+#video {
+    font-size    : 1.6em;
+    border       : 3px solid var(--lightgreen-color);
+    border-radius: 3px;
+    padding      : .4em 1.1em;
+}
+
+#order {
+    background-color: var(--lightgreen-color);
+    margin-right    : 1em;
+}
+
+#order:hover {
+    background  : none;
+    color       : white;
+    border-color: white;
+}
+
+#video:hover {
+    background: none;
+    color     : var(--lightgreen-color);
+}
+
+/* ===================================  footer  ============================================== */
+
 
 /* ================================  media  ================================================= */
 @media (min-width: 320px) {}
