@@ -25,11 +25,18 @@ a:hover {
     color: rgb(58, 212, 148);
 }
 
+.kid-img {
+    bottom  : 0;
+    position: absolute;
+    right   : 0;
+}
+
 /* ================================  header top  ===================================== */
 .header {
     background-image: url(images/bg.jpg);
     background-size : cover;
     height          : 100vh;
+    position        : relative;
 }
 
 .logo a {
@@ -44,12 +51,26 @@ a:hover {
 
 .navbar-nav .nav-item .nav-link {
     color      : white;
-    font-size  : 0.938em;
-    font-weight: 500;
+    font-size  : 1.1em;
+    font-weight: 400;
 }
 
 .navbar-nav .nav-item .nav-link:hover {
-    color: rgb(58, 212, 148);
+    color: white;
+}
+
+.navbar-nav li a::after {
+    content         : '';
+    display         : block;
+    width           : 100%;
+    background-color: rgb(58, 212, 148);
+    height          : 2px;
+    transition      : all .3s;
+    transform       : scale(0);
+}
+
+.navbar-nav li a:hover::after {
+    transform: scale(1);
 }
 
 .navbar-light .navbar-nav .nav-link.active {
@@ -59,7 +80,6 @@ a:hover {
 .navbar-nav {
     font-size     : 0.938em;
     font-weight   : 600;
-    right         : -1em;
     text-transform: uppercase;
 }
 
@@ -91,33 +111,26 @@ a:hover {
     margin-top : .5rem;
 }
 
+/* ================================  header-content  ======================================== */
+.header-content {
+    padding-top: 5em;
+}
+
+.header-content h1 {
+    font-size  : max(0.4vw, 45%, 3.5em);
+    font-weight: 300;
+    width      : clamp(45ch, 50%, 75ch);
+}
+
+.header-content p {
+    width: clamp(45ch, 75%, 75ch);
+}
+
 /* ================================  media  ================================================= */
-@media (min-width: 320px) {
-    .navbar-brand span {
-        position: absolute;
-        top     : -100rem;
-    }
-}
+@media (min-width: 320px) {}
 
-@media (max-width: 425px) {
-    .navbar-brand {
-        order: 0;
-    }
-
-    .navbar-toogler {
-        order: 2;
-    }
-
-    .phone {
-        order: 1;
-    }
-}
+@media (max-width: 425px) {}
 
 @media (min-width: 426px) {}
 
-@media (min-width: 1124px) {
-    .navbar-brand span {
-        position: relative;
-        top     : 0rem;
-    }
-}
+@media (min-width: 1124px) {}
