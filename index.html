@@ -9,16 +9,20 @@
   <link rel="stylesheet" href="style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap" rel="stylesheet">
   <script src="https://kit.fontawesome.com/b26721f731.js" crossorigin="anonymous"></script>
   <title>Digital Planet</title>
 </head>
 
 <body>
-  <!-- <section> -->
+  <!-- <section style="position: relative;"> -->
+
+
   <header>
     <div class="header pt-3">
+
       <img src="images/kid_VR.png" class="kid-img" alt="">
+
       <div class="container-fluid">
         <div class="row">
 
@@ -43,19 +47,19 @@
                         <li class="nav-item">
                           <a class="nav-link active" aria-current="page" href="#">О Продукте</a>
                         </li>
-                        <div class="dot d-none d-lg-inline mt-3"></div>
+                        <div class="dot d-none d-lg-inline"></div>
                         <li class="nav-item">
                           <a class="nav-link" href="#">Как работает</a>
                         </li>
-                        <div class="dot d-none d-lg-inline mt-3"></div>
+                        <div class="dot d-none d-lg-inline"></div>
                         <li class="nav-item">
                           <a class="nav-link" href="#">Технология</a>
                         </li>
-                        <div class="dot d-none d-lg-inline mt-3"></div>
+                        <div class="dot d-none d-lg-inline"></div>
                         <li class="nav-item">
                           <a class="nav-link" href="#">Вопросы</a>
                         </li>
-                        <div class="dot d-none d-lg-inline mt-3"></div>
+                        <div class="dot d-none d-lg-inline"></div>
                         <li class="nav-item">
                           <a class="nav-link" href="#">Контакты</a>
                         </li>
@@ -88,15 +92,24 @@
           <footer>
             <div class="container">
               <div class="row">
-                <div class="footer">
-                  <div class="socials col-6">
-                    <i class="fab fa-facebook-f mr-2"></i>
-                    <i class="fab fa-vk"></i>
-                  </div>
+                <div class="footer col-12">
+                  <div class="row">
 
-                  <div class="scroll-down col-6">
-                    <span>СКРОЛЛ ВНИЗ</span>
-                    <img src="images/scroll_down.png" alt="">
+                    <div class="footer-social col d-flex">
+                      <a href="#">
+                        <i class="fab fa-facebook-f me-3"></i>
+                      </a>
+                      <a href="#">
+                        <i class="fab fa-vk"></i>
+                      </a>
+                    </div>
+
+                    <div class="footer-scroll-down col d-flex flex-column align-items-start">
+                      <!-- <div class="row"> -->
+                      <span class="col">СКРОЛЛ ВНИЗ</span>
+                      <i class="fas fa-chevron-down mt-3" style="margin-left: 3em;"></i>
+                      <!-- </div> -->
+                    </div>
                   </div>
                 </div>
               </div>
@@ -104,8 +117,8 @@
           </footer>
         </div>
       </div>
-    </div>
 
+    </div>
   </header>
   <!-- </section> -->
 
