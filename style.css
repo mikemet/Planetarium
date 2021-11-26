@@ -25,11 +25,23 @@ a:hover {
     color: rgb(58, 212, 148);
 }
 
-/* ================================  header top  ===================================== */
+/* ================================  top  ===================================== */
 .header {
     background-image: url(images/bg.jpg);
     background-size : cover;
-    height          : 100vh;
+    display         : grid;
+    grid-area       :
+        "top"
+        "content"
+        "bottom";
+    grid-template-columns: 1fr;
+    grid-template-rows   : 5rem 1fr 3rem;
+    height               : 100vh;
+}
+
+.top {
+    display        : flex;
+    justify-content: space-between;
 }
 
 .logo a {
@@ -42,7 +54,11 @@ a:hover {
     color: white;
 }
 
-.navbar-nav .nav-item .nav-link {
+.logo btn {
+    color: white;
+}
+
+/*.navbar-nav .nav-item .nav-link {
     color      : white;
     font-size  : 0.938em;
     font-weight: 500;
@@ -68,7 +84,7 @@ a:hover {
     height          : 3px;
     border-radius   : 50%;
     background-color: #B0ACAC;
-}
+}*/
 
 .phone a {
     border        : 2px solid rgb(58, 212, 148);
@@ -89,6 +105,66 @@ a:hover {
     font-size  : 1em;
     font-weight: 700;
     margin-top : .5rem;
+}
+
+/* ===================================  content  ================================ */
+.content {
+    line-height    : .5em;
+    display        : flex;
+    flex-direction : column;
+    justify-content: start;
+}
+
+.content .btn-link {
+    color          : white;
+    text-decoration: none;
+}
+
+.content .order,
+.content .video {
+    text-transform: uppercase;
+}
+
+.content .order {
+    border: 3px solid rgb(58, 212, 148);
+}
+
+.content .order:hover {
+    color           : white;
+    border-color    : rgb(58, 212, 148);
+    background-color: rgb(58, 212, 148);
+}
+
+.content .video {
+    border: 2px solid white;
+}
+
+.content .video:hover {
+    background-color: rgb(58, 212, 148);
+    border-color    : rgb(58, 212, 148);
+}
+
+/* ===================================  bottom  ================================== */
+.bottom {
+    display              : grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.fa-facebook-f,
+.fa-vk {
+    font-size: 1.5rem;
+}
+
+.fa-facebook-f:hover {
+    color: #3b5998;
+}
+
+.fa-vk:hover {
+    color: #4c75a3;
+}
+
+.bottom .scroll {
+    color: gray;
 }
 
 /* ================================  media  ================================================= */

@@ -15,87 +15,52 @@
 </head>
 
 <body>
-  <header>
-    <div class="container-fluid header pt-3">
-      <div class="row">
+  <div class="container-fluid">
+    <div class="header pt-4 pb-4 ps-5 pe-5">
 
-        <div class="top d-inline-flex justify-content-around align-items-center">
-
-          <div class="top-item logo order-0 order-md-0">
-            <a href="#">
-              <img src="/images/logo.png" class="me-2" alt="logo">
-              <span class="d-none d-lg-inline">digital planet</span></a>
-          </div>
-
-          <div class="top-item main-menu order-2 order-md-1">
-            <nav class="navbar navbar-expand-lg">
-              <img src="images/burger.png" class="navbar-toggler" data-bs-toggle="collapse" alt="burger"
-                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                aria-label="Toggle navigation">
-
-              <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav pt-2 mb-2 mb-lg-0">
-                  <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">О Продукте</a>
-                  </li>
-                  <div class="dot d-none d-lg-inline mt-3"></div>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Как работает</a>
-                  </li>
-                  <div class="dot d-none d-lg-inline mt-3"></div>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Технология</a>
-                  </li>
-                  <div class="dot d-none d-lg-inline mt-3"></div>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Вопросы</a>
-                  </li>
-                  <div class="dot d-none d-lg-inline mt-3"></div>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Контакты</a>
-                  </li>
-                </ul>
-              </div>
-            </nav>
-
-          </div>
-
-          <div class="top-item phone d-flex order-1 order-md-2">
-            <a href="#">заказать</a>
-            <span class="d-none d-lg-inline">8 (800) 555 75 35</span>
-          </div>
-
+      <div class="block top">
+        <div class="top-item logo">
+          <a href="#">
+            <img src="images/logo.png" class="me-2" alt="planetarium" />
+            <span>digital planet</span>
+          </a>
+        </div>
+        <div class="top-item" style="width: 20rem;">Top 2</div>
+        <div class="top-item phone">
+          <a href="#">заказать</a>
+          <span>8 (800) 999 73 67</span>
         </div>
       </div>
 
-      <div class="row">
-        <div>
-          <div class="container">
-            <h1>Digital Planet VR</h1>
-            <p>Образовательный виртуальный планетарий в Новороссийске.</p>
-            <p>Познавательные приключения в мире звезд и галактик.</p>
-            <a href="#">Заказать</a>
-            <a href="#">Видео</a>
-          </div>
+      <div class="block content">
+        <div class="container">
+          <h1 class="content-item pt-5 pb-3">Digital Planet VR</h1>
+          <p>Образовательный виртуальный планетарий в Новороссийске.</p>
+          <p class="pb-5">Познавательные приключения в мире звезд и галактик.</p>
+          <button type="button" class="btn btn-link order me-2">
+            <img src="images/order_vector.png" class="me-2" alt="order">
+            <span>заказать</span>
+          </button>
+          <button type="button" class="btn btn-link video">
+            <img src="images/video_vector.png" class="me-2" alt="video">
+            <span>видео</span>
+          </button>
         </div>
       </div>
-
-        <div class="row">
-          <div class="footer">
-            <div class="container d-flex">
-              <div class="socials col-6">
-                <i class="fab fa-facebook-f mr-2"></i>
-                <i class="fab fa-vk"></i>
-              </div>
-              <div class="scroll-down col-6">
-                <span>СКРОЛЛ ВНИЗ</span><br>
-                <img src="images/scroll_down.png" alt="">
-              </div>
-            </div>
-          </div>
+      <div class="block bottom">
+        <div class="bottom-item">
+          <a href="#" class="me-2"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-vk"></i></a>
         </div>
+        <div class="bottom-item scroll">
+          <a href="#"><span>СКРОЛЛ ВНИЗ</span><br>
+            <img src="images/scroll_down.png" class="ms-5" alt=""></a>
+        </div>
+      </div>
     </div>
-  </header>
+  </div>
+
+
 
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
