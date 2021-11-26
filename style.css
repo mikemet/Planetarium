@@ -42,7 +42,7 @@ a:hover {
     color: white;
 }
 
-.navbar-nav .nav-item .nav-link {
+/*.navbar-nav .nav-item .nav-link {
     color      : white;
     font-size  : 0.938em;
     font-weight: 500;
@@ -90,7 +90,7 @@ a:hover {
     font-weight: 700;
     margin-top : .5rem;
 }
-
+*/
 /* ================================  media  ================================================= */
 @media (min-width: 320px) {
     .navbar-brand span {
