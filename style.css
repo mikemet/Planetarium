@@ -167,6 +167,28 @@ a:hover {
     color: gray;
 }
 
+.arrow-scroll-bottom {
+    cursor                   : pointer;
+    animation-name           : animateArrow;
+    animation-duration       : 1s;
+    animation-iteration-count: infinite;
+}
+
+/* =================================  animation for arrow  ========================== */
+@keyframes animateArrow {
+    0% {
+        transform: translateY(0px);
+    }
+
+    50% {
+        transform: translateY(20px);
+    }
+
+    100% {
+        transform: translateY(0px);
+    }
+}
+
 /* ================================  media  ================================================= */
 @media (min-width: 320px) {
     .navbar-brand span {
