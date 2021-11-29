@@ -42,6 +42,7 @@ a:hover {
 .top {
     display        : flex;
     justify-content: space-between;
+    align-items    : center;
 }
 
 .logo a {
@@ -58,25 +59,16 @@ a:hover {
     color: white;
 }
 
-/*.navbar-nav .nav-item .nav-link {
-    color      : white;
-    font-size  : 0.938em;
-    font-weight: 500;
-}
-
-.navbar-nav .nav-item .nav-link:hover {
-    color: rgb(58, 212, 148);
+/* =======================================  top menu  ========================================= */
+.navbar-nav .nav-item .nav-link {
+    color         : white;
+    font-size     : 1.2rem;
+    font-weight   : lighter;
+    text-transform: uppercase;
 }
 
 .navbar-light .navbar-nav .nav-link.active {
     color: white;
-}
-
-.navbar-nav {
-    font-size     : 0.938em;
-    font-weight   : 600;
-    right         : -1em;
-    text-transform: uppercase;
 }
 
 .navbar-nav .dot {
@@ -84,7 +76,22 @@ a:hover {
     height          : 3px;
     border-radius   : 50%;
     background-color: #B0ACAC;
-}*/
+    margin-top      : 1.3rem;
+}
+
+.navbar-nav li a::after {
+    content         : '';
+    display         : block;
+    width           : 100%;
+    background-color: white;
+    height          : 2px;
+    transition      : all .3s;
+    transform       : scale(0);
+}
+
+.navbar-nav li a:hover::after {
+    transform: scale(1);
+}
 
 .phone a {
     border        : 2px solid rgb(58, 212, 148);
@@ -113,6 +120,15 @@ a:hover {
     display        : flex;
     flex-direction : column;
     justify-content: start;
+}
+
+.content h1 {
+    font-size  : 5rem;
+    font-weight: 200;
+}
+
+.content p {
+    font-size: 1.2rem;
 }
 
 .content .btn-link {
