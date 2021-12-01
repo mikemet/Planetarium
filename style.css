@@ -38,12 +38,14 @@ a:hover {
     grid-template-columns: 1fr;
     grid-template-rows   : 5rem 1fr 3rem;
     height               : 100vh;
+    z-index              : 0;
 }
 
 .kid-img {
     position: absolute;
     right   : 0;
     bottom  : 0;
+    z-index : -5;
 }
 
 .top {
@@ -67,22 +69,25 @@ a:hover {
 }
 
 /* =======================================  top menu  ========================================= */
-.navbar-brand {
-    position: relative;
-}
 
 .navbar-collapse {
-    position           : inherit;
-    top                : 3.5rem;
-    /* background-color: rgb(58, 212, 148); */
-
+    position   : inherit;
+    /* top     : 8.5rem; */
 }
+
+/* .navbar-nav {
+    position   : absolute;
+    padding-top: 10rem;
+} */
 
 .navbar-nav .nav-item .nav-link {
     color         : white;
-    font-size     : 1.2rem;
     font-weight   : lighter;
     text-transform: uppercase;
+}
+
+.navbar-nav .nav-item .nav-link:hover {
+    color: white;
 }
 
 .navbar-light .navbar-nav .nav-link.active {
@@ -128,7 +133,7 @@ a:hover {
 
 .phone span {
     font-size  : 1em;
-    font-weight: 700;
+    font-weight: 500;
     margin-top : .5rem;
 }
 
@@ -225,29 +230,25 @@ a:hover {
 
 /* ================================  media  ================================================= */
 @media (min-width: 320px) {
-    .navbar-brand span {
-        /* position   : relative; */
-        /* top     : -100rem; */
-    }
+
+    /* .top .logo span,
+    .phone span {
+        display: none;
+    } */
+
+    /* .dot {
+        display: none;
+    } */
 }
 
-@media (max-width: 425px) {
-    .navbar-brand {
-        order: 0;
-    }
+@media (min-width: 768px) {
 
-    .navbar-toogler {
-        order: 2;
-    }
+    /* .top .logo span,
+    .phone span {
+        display: inline-block;
+    } */
 
-    .phone {
-        order: 1;
-    }
-}
-
-@media (min-width: 1124px) {
-    .navbar-brand span {
-        /* position: relative; */
-        /* top     : 0rem; */
-    }
+    /* .dot {
+        display: block;
+    } */
 }
