@@ -27,6 +27,7 @@ a:hover {
 
 /* ================================  top  ===================================== */
 .header {
+    position        : relative;
     background-image: url(images/bg.jpg);
     background-size : cover;
     display         : grid;
@@ -37,11 +38,20 @@ a:hover {
     grid-template-columns: 1fr;
     grid-template-rows   : 5rem 1fr 3rem;
     height               : 100vh;
+    z-index              : 0;
+}
+
+.kid-img {
+    position: absolute;
+    right   : 0;
+    bottom  : 0;
+    z-index : -5;
 }
 
 .top {
     display        : flex;
     justify-content: space-between;
+    align-items    : center;
 }
 
 .logo a {
@@ -58,25 +68,30 @@ a:hover {
     color: white;
 }
 
-/*.navbar-nav .nav-item .nav-link {
-    color      : white;
-    font-size  : 0.938em;
-    font-weight: 500;
+/* =======================================  top menu  ========================================= */
+
+.navbar-collapse {
+    position   : inherit;
+    /* top     : 8.5rem; */
+}
+
+/* .navbar-nav {
+    position   : absolute;
+    padding-top: 10rem;
+} */
+
+.navbar-nav .nav-item .nav-link {
+    color         : white;
+    font-weight   : lighter;
+    text-transform: uppercase;
 }
 
 .navbar-nav .nav-item .nav-link:hover {
-    color: rgb(58, 212, 148);
+    color: white;
 }
 
 .navbar-light .navbar-nav .nav-link.active {
     color: white;
-}
-
-.navbar-nav {
-    font-size     : 0.938em;
-    font-weight   : 600;
-    right         : -1em;
-    text-transform: uppercase;
 }
 
 .navbar-nav .dot {
@@ -84,7 +99,22 @@ a:hover {
     height          : 3px;
     border-radius   : 50%;
     background-color: #B0ACAC;
-}*/
+    margin-top      : 1.3rem;
+}
+
+.navbar-nav li a::after {
+    content         : '';
+    display         : block;
+    width           : 100%;
+    background-color: white;
+    height          : 2px;
+    transition      : all .3s;
+    transform       : scale(0);
+}
+
+.navbar-nav li a:hover::after {
+    transform: scale(1);
+}
 
 .phone a {
     border        : 2px solid rgb(58, 212, 148);
@@ -103,7 +133,7 @@ a:hover {
 
 .phone span {
     font-size  : 1em;
-    font-weight: 700;
+    font-weight: 500;
     margin-top : .5rem;
 }
 
@@ -113,6 +143,15 @@ a:hover {
     display        : flex;
     flex-direction : column;
     justify-content: start;
+}
+
+.content h1 {
+    font-size  : 5rem;
+    font-weight: 200;
+}
+
+.content p {
+    font-size: 1.2rem;
 }
 
 .content .btn-link {
@@ -167,33 +206,49 @@ a:hover {
     color: gray;
 }
 
+.arrow-scroll-bottom {
+    cursor                   : pointer;
+    animation-name           : animateArrow;
+    animation-duration       : 1s;
+    animation-iteration-count: infinite;
+}
+
+/* =================================  animation for arrow  ========================== */
+@keyframes animateArrow {
+    0% {
+        transform: translateY(0px);
+    }
+
+    50% {
+        transform: translateY(20px);
+    }
+
+    100% {
+        transform: translateY(0px);
+    }
+}
+
 /* ================================  media  ================================================= */
 @media (min-width: 320px) {
-    .navbar-brand span {
-        position: absolute;
-        top     : -100rem;
-    }
+
+    /* .top .logo span,
+    .phone span {
+        display: none;
+    } */
+
+    /* .dot {
+        display: none;
+    } */
 }
 
-@media (max-width: 425px) {
-    .navbar-brand {
-        order: 0;
-    }
+@media (min-width: 768px) {
 
-    .navbar-toogler {
-        order: 2;
-    }
+    /* .top .logo span,
+    .phone span {
+        display: inline-block;
+    } */
 
-    .phone {
-        order: 1;
-    }
-}
-
-@media (min-width: 426px) {}
-
-@media (min-width: 1124px) {
-    .navbar-brand span {
-        position: relative;
-        top     : 0rem;
-    }
+    /* .dot {
+        display: block;
+    } */
 }

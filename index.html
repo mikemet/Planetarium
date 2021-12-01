@@ -17,25 +17,61 @@
 <body>
   <div class="container-fluid">
     <div class="header pt-4 pb-4 ps-5 pe-5">
+      <img src="images/kid_VR.png" class="kid-img d-none d-lg-block" alt="">
 
       <div class="block top">
-        <div class="top-item logo">
+        <div class="top-item logo order-0">
           <a href="#">
             <img src="images/logo.png" class="me-2" alt="planetarium" />
-            <span>digital planet</span>
+            <span class="d-none d-sm-inline-block d-lg-none d-xl-inline-block">digital planet</span>
           </a>
         </div>
-        <div class="top-item" style="width: 20rem;">Top 2</div>
-        <div class="top-item phone">
+
+        <div class="top-item order-2 order-md-1">
+          <nav class="navbar navbar-expand-lg navbar-light bg-none">
+            <div class="container-fluid">
+
+              <img src="images/burger.png" class="navbar-toggler burger" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation" alt="">
+
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">о продукте</a>
+                  </li>
+                  <div class="dot d-none d-lg-block"></div>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">как работает</a>
+                  </li>
+                  <div class="dot d-none d-lg-block"></div>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">технология</a>
+                  </li>
+                  <div class="dot d-none d-lg-block"></div>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">продукты</a>
+                  </li>
+                  <div class="dot d-none d-lg-block"></div>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">контакты</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+        </div>
+
+        <div class="top-item phone order-1 ordder-md-2">
           <a href="#">заказать</a>
-          <span>8 (800) 999 73 67</span>
+          <span class="d-none d-xl-inline-block">8 (800) 999 73 67</span>
         </div>
       </div>
 
       <div class="block content">
         <div class="container">
-          <h1 class="content-item pt-5 pb-3">Digital Planet VR</h1>
-          <p>Образовательный виртуальный планетарий в Новороссийске.</p>
+          <h1 class="content-item pt-5 pb-4">Digital Planet VR</h1>
+          <p class="pb-2">Образовательный виртуальный планетарий в Новороссийске.</p>
           <p class="pb-5">Познавательные приключения в мире звезд и галактик.</p>
           <button type="button" class="btn btn-link order me-2">
             <img src="images/order_vector.png" class="me-2" alt="order">
@@ -47,6 +83,7 @@
           </button>
         </div>
       </div>
+
       <div class="block bottom">
         <div class="bottom-item">
           <a href="#" class="me-2"><i class="fab fa-facebook-f"></i></a>
@@ -54,7 +91,7 @@
         </div>
         <div class="bottom-item scroll">
           <a href="#"><span>СКРОЛЛ ВНИЗ</span><br>
-            <img src="images/scroll_down.png" class="ms-5" alt=""></a>
+            <img src="images/scroll_down.png" class="ms-5 arrow-scroll-bottom" alt=""></a>
         </div>
       </div>
     </div>
