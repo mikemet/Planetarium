@@ -54,6 +54,12 @@ a:hover {
     align-items    : center;
 }
 
+/* .top {
+    display              : grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows   : 1fr;
+} */
+
 .logo a {
     font-size     : 1.125em;
     font-weight   : 500;
@@ -69,16 +75,6 @@ a:hover {
 }
 
 /* =======================================  top menu  ========================================= */
-
-.navbar-collapse {
-    position   : inherit;
-    /* top     : 8.5rem; */
-}
-
-/* .navbar-nav {
-    position   : absolute;
-    padding-top: 10rem;
-} */
 
 .navbar-nav .nav-item .nav-link {
     color         : white;
